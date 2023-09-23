@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>User Dashboard</h1>
+    <nav>
+        <a href="{{ url_for('index') }}">Home</a>
+    </nav>
+    <div>
+        {{ plot|safe }}
+    </div>
+</body>
+</html>
